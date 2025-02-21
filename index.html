@@ -2098,7 +2098,8 @@
               </div>
               <div class="col-lg-6 text-center text-lg-end">
                 <p class="text-3 mb-0">
-                  Mutto Locations. © 2025. All Rights Reserved
+                  Mutto Locations. © <span id="year"></span>. All Rights
+                  Reserved
                 </p>
               </div>
             </div>
@@ -2187,6 +2188,9 @@
           submitButton.textContent = "CALL ME BACK";
         }
       });
+    </script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
     </script>
   </body>
 </html>
